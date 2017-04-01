@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MobileCenterCrashes
 
 class ViewController: UIViewController {
     
@@ -26,5 +27,8 @@ class ViewController: UIViewController {
         helloLabel.isHidden = !helloLabel.isHidden;
     }
 
+    @IBAction func crashButtonOnClick(_ sender: UIButton) {
+        MSCrashes.generateTestCrash();
+    }
 }
 
